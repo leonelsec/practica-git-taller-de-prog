@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Información sobre el producto</title>
+  </head>
+  <body>
+    <h1>Información sobre el producto</h1>
+
+    <fieldset>
+      <legend>Datos básicos</legend>
+
+      <div>
+        <label for="">nombre</label>
+        <br />
+        <input type="text" name="nombre" id="nombre" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="descripcion">Descripción</label>
+        <br />
+        <textarea
+          name="descripcion"
+          id="descripcion"
+          rows="5"
+          cols="40"
+        ></textarea>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="foto">Foto</label>
+        <input type="file" name="foto" id="foto" accept=".jpg, .jpeg, .png" />
+      </div>
+
+      <br />
+
+      <div>
+        <input type="checkbox" name="contador_visita" id="contador_visita" />
+        <label for="contador_visita">Añadir contador de visita</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos económicos</legend>
+
+      <div>
+        <label for="precio">Precio</label>
+        <input type="text" name="precio" id="precio" />
+        <label>€</label>
+
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
+        <label for="impuesto">Impuestos</label>
+        <select name="impuesto" id="impuesto">
+          <option value="4">4%</option>
+          <option value="7">7%</option>
+          <option value="16">16%</option>
+          <option value="25">25%</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="promocion">Promoción</label>
+        <div>
+          <input type="radio" name="promocion" id="ninguno" />
+          <label for="ninguno">Ninguno</label>
+        </div>
+
+        <div>
+          <input type="radio" name="promocion" id="envio_gratis" />
+          <label for="envio_gratis">Transporte gratiuto</label>
+        </div>
+
+        <div>
+          <input type="radio" name="promocion" id="descuento_5" />
+          <label for="descuento_5">Descuento 5%</label>
+        </div>
+      </div>
+    </fieldset>
+  </body>
+</html>
